@@ -1,6 +1,6 @@
 {
-  "name": "@mantle/rwa-toolkit",
-  "version": "0.1.0",
+  "name": "eddo",
+  "version": "1.0.0",
   "description": "OpenZeppelin-style smart contract library for Real World Assets with configurable rules engine",
   "main": "index.js",
   "directories": {
@@ -10,8 +10,6 @@
     "compile": "hardhat compile",
     "test": "hardhat test",
     "coverage": "hardhat coverage",
-    "deploy": "hardhat run scripts/deploy.js",
-    "verify": "hardhat verify",
     "clean": "hardhat clean"
   },
   "keywords": [
@@ -24,9 +22,11 @@
     "ethereum",
     "defi",
     "tokenization",
-    "rules-engine"
+    "rules-engine",
+    "kyc",
+    "smart-contracts"
   ],
-  "author": "Mantle Team",
+  "author": "cadalt0",
   "license": "MIT",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^4.0.0",
@@ -42,10 +42,10 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-org/mantle-rwa-toolkit.git"
+    "url": "https://github.com/cadalt0/EDDO.git"
   },
   "bugs": {
-    "url": "https://github.com/your-org/mantle-rwa-toolkit/issues"
+    "url": "https://github.com/cadalt0/EDDO/issues"
   },
-  "homepage": "https://github.com/your-org/mantle-rwa-toolkit#readme"
+  "homepage": "https://github.com/cadalt0/EDDO#readme"
 }
