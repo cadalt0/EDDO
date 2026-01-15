@@ -164,6 +164,43 @@ Start here based on your role:
 
 ---
 
+## 📦 NPM Package
+
+EDDO is available as an npm package for easy integration into your project:
+
+```bash
+npm install eddo-rwa
+```
+
+**Package:** [eddo-rwa on npm](https://www.npmjs.com/package/eddo-rwa)
+
+### Import in your contracts:
+
+```solidity
+import "eddo-rwa/contracts/adapters/RWA_ERC20.sol";
+import "eddo-rwa/contracts/core/RulesEngine.sol";
+import "eddo-rwa/contracts/rules/KYCTierRule.sol";
+```
+
+### Working Example
+
+See the complete **[token-example](./token-example)** directory for a production-ready deployment:
+
+- **Live deployment on Mantle Sepolia testnet**
+- MyRWAToken: `0x1cBac1E1A76038e41d1bf5a61e973bDa12F02425`
+- Full deployment script with KYC, Blacklist, and Velocity rules
+- Hardhat configuration for local and testnet deployment
+- Run locally: `cd token-example && npm install && npx hardhat run scripts/deploy.js`
+
+The example demonstrates:
+- ✅ Deploying EDDO contracts from npm package
+- ✅ Configuring multiple compliance rules
+- ✅ Whitelisting users with KYC tiers
+- ✅ Minting compliant tokens
+- ✅ Production-ready network configuration
+
+---
+
 ## Quick Start
 
 ### Option 1: 5-Minute Example
@@ -224,18 +261,6 @@ npm install
 # 2. Compile
 npx hardhat compile
 
-# 3. Test locally
-npx hardhat node
-
-# 4. In another terminal:
-npx hardhat run scripts/deploy-full.js --network localhost
-
-# 5. Deploy to testnet
-npx hardhat run scripts/deploy-full.js --network sepolia
-
-# 6. Configure rules
-npx hardhat run scripts/configure-rules.js --network sepolia
-```
 
 ## What This Toolkit Does
 
@@ -327,76 +352,8 @@ See [RULES.md](docs/RULES.md#rule-development-guide) for detailed guide with tes
 - **Governed**: Timelock + multi-sig for critical operations
 - **Circuit Breaker**: Emergency pause with transparent reasoning
 
-## Testing
-
-```bash
-# Foundry
-forge test
-
-# Hardhat
-npx hardhat test
-
-# Coverage
-forge coverage
 ```
 
-## Gas Optimization
 
-- Bitmap caching for rule results
-- Short-circuit evaluation
-- Minimal external calls
-- L2-optimized (Arbitrum, Optimism, Polygon)
-
-## Compliance
-
-- **Audit-Friendly**: Clear, modular code with comprehensive tests
-- **Regulator-Friendly**: Transparent event logs and forensic replay
-- **No PII Onchain**: Only attestation IDs and hashes stored
-- **Configurable**: Adapt to regional regulations (US, EU, UK, GCC)
-
-## Roadmap
-
-**MVP (Current)**
-- ✅ Rules engine and core infrastructure
-- ✅ ERC20 adapter
-- ✅ Identity resolution (allow-lists, composite)
-- ✅ Policy registry with versioning
-- ✅ Core rules (KYC, jurisdiction, blacklist, lockup, supply cap, velocity)
-- ✅ Governance (access control, circuit breaker, timelock)
-
-**Phase 2**
-- ERC721 and ERC1155 adapters
-- ERC4626 vault adapter
-- Additional rule types (trading windows, investor caps, NAV gating)
-- Multi-attestor quorum and slashing
-- Offchain TypeScript SDK
-
-**Phase 3**
-- Cross-chain policy sync
-- Advanced oracle integrations
-- Formal verification
-- Enterprise integrations (Chainlink, Pyth, EAS)
-
-## Contributing
-
-Contributions welcome! Please:
-1. Fork the repo
-2. Create a feature branch
-3. Add tests for new functionality
-4. Submit a pull request
-
-## License
-
-MIT License
-
-## Acknowledgments
-
-Built with inspiration from:
-- OpenZeppelin Contracts
-- Ethereum Attestation Service (EAS)
-- Maple Finance
-- Centrifuge
-
----
 
 **⚠️ Disclaimer**: This is experimental software. Always audit thoroughly before production use.
