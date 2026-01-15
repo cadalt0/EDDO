@@ -4,7 +4,7 @@
 
 This is the complete documentation for **EDDO** - an OpenZeppelin-style smart contract library for Real World Assets.
 
-### 1. [SETUP.md](SETUP.md) - 8.7 KB
+### 1. [SETUP.md](SETUP.md) 
 **For:** First-time developers  
 **Contains:**
 - Prerequisites checklist
@@ -279,28 +279,3 @@ This is the complete documentation for **EDDO** - an OpenZeppelin-style smart co
 
 ---
 
-## ✨ Key Features of Documentation
-
-1. **Comprehensive**: 8,600+ lines covering every aspect
-2. **Practical**: Code examples for every concept
-3. **Real-World**: 5 complete deployment scenarios
-4. **Well-Organized**: 12 documents, each with clear purpose
-5. **Cross-Referenced**: Links between related documents
-6. **Step-by-Step**: Clear procedures for every task
-7. **Role-Specific**: Different paths for different roles
-8. **Complete**: API reference, architecture, examples, all included
-
----
-
-## 📈 Next Steps
-
-1. **Read** - Start with your role-specific path above
-2. **Setup** - Follow SETUP.md to prepare environment
-3. **Deploy** - Use DEPLOYMENT.md for testnet
-4. **Configure** - Use CONFIGURATION.md for rules setup
-5. **Develop** - Reference API.md while building
-6. **Test** - Follow EXAMPLES.md for patterns
-
----
-
-**Project Name:** EDDO

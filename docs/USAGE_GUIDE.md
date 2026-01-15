@@ -34,40 +34,13 @@ forge install
 forge build
 ```
 
-## Quick Start
-
-### 1. Clone and Setup
-
-```bash
-git clone https://github.com/your-org/mantle-rwa-toolkit.git
-cd mantle-rwa-toolkit
-npm install
-```
-
-### 2. Compile Contracts
+Compile Contracts
 
 ```bash
 # Hardhat
 npx hardhat compile
 
-# Foundry
-forge build
-```
 
-### 3. Run Tests
-
-```bash
-# Hardhat
-npx hardhat test
-
-# Foundry
-forge test
-```
-
-### 4. Deploy Example
-
-```bash
-npx hardhat run scripts/deploy-example.js --network localhost
 ```
 
 ## Core Concepts
@@ -521,35 +494,3 @@ describe("RWA_ERC20", function () {
   });
 });
 ```
-
-## Production Checklist
-
-### Pre-Deployment
-
-- [ ] Complete security audit
-- [ ] Deploy to testnet and verify
-- [ ] Set up multi-sig wallets (minimum 3/5)
-- [ ] Configure timelock delays (minimum 24h)
-- [ ] Prepare monitoring and alerting
-- [ ] Document all contract addresses
-- [ ] Prepare emergency response plan
-
-### Deployment
-
-- [ ] Deploy core contracts
-- [ ] Configure rules and identity
-- [ ] Set up governance (multi-sig, timelock)
-- [ ] Transfer admin roles to multi-sig
-- [ ] Verify contracts on block explorer
-- [ ] Test with small amounts first
-
-### Post-Deployment
-
-- [ ] Monitor all transactions
-- [ ] Set up event indexing
-- [ ] Regular policy reviews
-- [ ] Update documentation
-- [ ] Maintain communication channels
-- [ ] Plan upgrade path
-
-----

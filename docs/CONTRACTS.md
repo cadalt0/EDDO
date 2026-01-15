@@ -1,6 +1,5 @@
 # Contracts Reference - EDDO
 
-Complete reference for all 27 contracts, organized by module, with explanations and usage patterns.
 
 ## Table of Contents
 
@@ -1337,46 +1336,3 @@ library SafeMath {
         returns (uint256);
 }
 ```
-
-**Example Usage:**
-```solidity
-// Calculate 2.5% fee on 1000 tokens
-uint256 amount = 1000e18;
-uint256 fee = SafeMath.basisPointsToPercentage(amount, 250);  // 250 basis points = 2.5%
-// fee = 25e18 (2.5% of 1000)
-```
-
----
-
-## TOTAL STATISTICS
-
-**Summary Table:**
-
-| Category | Count | Purpose |
-|----------|-------|---------|
-| **Interfaces** | 6 | Define contract APIs |
-| **Core Engine** | 4 | Evaluate rules |
-| **Policy** | 1 | Version management |
-| **Identity** | 2 | KYC resolution |
-| **Adapters** | 2 | ERC20/ERC721 tokens |
-| **Governance** | 3 | Access control, pause, timelock |
-| **Rules** | 6 | KYC, blacklist, jurisdiction, lockup, supply, velocity |
-| **Libraries** | 3 | Bitmap ops, strings, math |
-| **TOTAL** | **27** | Complete RWA framework |
-
-**Lines of Code:**
-- Interfaces: ~100 lines
-- Core Engine: ~300 lines
-- Governance: ~500 lines
-- Rules: ~800 lines
-- Adapters: ~400 lines
-- Libraries: ~300 lines
-- **Total: ~2,400 lines of production Solidity**
-
-**Key Characteristics:**
-- ✅ Fully modular (27 independent contracts)
-- ✅ Gas optimized (bit operations, immutables, short-circuit evaluation)
-- ✅ Thoroughly documented (this file + SETUP.md + INTERFACES.md + API.md)
-- ✅ Auditable (transparent events, clear logic)
-- ✅ Production-ready (error handling, access control)
-- ✅ Framework agnostic (works with Hardhat, Foundry, Truffle)
