@@ -1,0 +1,51 @@
+{
+  "name": "@mantle/rwa-toolkit",
+  "version": "0.1.0",
+  "description": "OpenZeppelin-style smart contract library for Real World Assets with configurable rules engine",
+  "main": "index.js",
+  "directories": {
+    "contracts": "contracts"
+  },
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "coverage": "hardhat coverage",
+    "deploy": "hardhat run scripts/deploy.js",
+    "verify": "hardhat verify",
+    "clean": "hardhat clean"
+  },
+  "keywords": [
+    "rwa",
+    "real-world-assets",
+    "compliance",
+    "erc20",
+    "erc721",
+    "solidity",
+    "ethereum",
+    "defi",
+    "tokenization",
+    "rules-engine"
+  ],
+  "author": "Mantle Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "hardhat": "^2.19.0",
+    "ethers": "^6.9.0",
+    "@typechain/hardhat": "^9.1.0",
+    "typechain": "^8.3.0",
+    "solidity-coverage": "^0.8.5",
+    "prettier": "^3.1.0",
+    "prettier-plugin-solidity": "^1.2.0"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/mantle-rwa-toolkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/mantle-rwa-toolkit/issues"
+  },
+  "homepage": "https://github.com/your-org/mantle-rwa-toolkit#readme"
+}
