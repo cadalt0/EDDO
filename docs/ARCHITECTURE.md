@@ -354,5 +354,3 @@ Contracts use ERC-1967 proxy pattern:
 - Automated compliance reporting
 
 ---
-
-**Last Updated**: January 2026

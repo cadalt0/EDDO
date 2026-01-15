@@ -1068,21 +1068,4 @@ try {
 }
 ```
 
----
 
-## Gas Usage Reference
-
-Estimated gas per operation:
-
-| Operation | Gas | Cost ($50/gwei) |
-|-----------|-----|-----------------|
-| transfer (1 rule) | 60,000 | $3 |
-| transfer (3 rules) | 120,000 | $6 |
-| mint | 80,000 | $4 |
-| attestUser | 60,000 | $3 |
-| addToBlacklist | 50,000 | $2.50 |
-| setRuleSet | 40,000 | $2 |
-| grantRole | 30,000 | $1.50 |
-| pause | 25,000 | $1.25 |
-| queueTransaction | 45,000 | $2.25 |
-| executeTransaction | 50,000 | $2.50 |

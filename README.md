@@ -389,12 +389,6 @@ Contributions welcome! Please:
 
 MIT License
 
-## Support
-
-- GitHub Issues: [github.com/your-org/mantle-rwa-toolkit](https://github.com)
-- Documentation: [docs.mantle-rwa.io](https://example.com)
-- Discord: [discord.gg/mantle-rwa](https://discord.com)
-
 ## Acknowledgments
 
 Built with inspiration from:

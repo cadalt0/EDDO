@@ -552,12 +552,4 @@ describe("RWA_ERC20", function () {
 - [ ] Maintain communication channels
 - [ ] Plan upgrade path
 
-## Support
-
-- Documentation: [docs.mantle-rwa.io](https://example.com)
-- GitHub: [github.com/your-org/mantle-rwa-toolkit](https://github.com)
-- Discord: [discord.gg/mantle-rwa](https://discord.com)
-
----
-
-**Last Updated**: January 2026
+----
